@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass Word Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="caution">
+        <small>** Password Length: 4- 16 characters **</small>
+    </div>
+    <div class="container">
+        <div class="sml-container">
+            <h1>Generate password</h1>
+            <form class="form">
+                <input
+                    type="text"
+                    name="" 
+                    id="text" 
+                >
+                <button class="btn-copy hidden" id="btn-copy">Copy Password</button>
+                <div>
+                    <label>Length</label>
+                    <input id="len" type="number">
+                </div>
+                <div>
+                    <label>Contain Numbers</label>
+                    <input id="num" class="input" type="checkbox">
+                </div>
+                <div>
+                    <label>Contain Upper cases</label>
+                    <input id="upper" class="input" type="checkbox">
+                </div>
+                <div>
+                    <label>Contain Lower cases</label>
+                    <input id= "lower" class="input" type="checkbox">
+                </div>
+                <div>
+                    <label>Contain Symbols</label>
+                    <input  class="input" type="checkbox" id= "symbol">
+                </div>
+            </form>  
+        </div>
+        <button class="btn">Generate</button> 
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
